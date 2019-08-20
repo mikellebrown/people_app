@@ -1,0 +1,6 @@
+  <h1> Individuals </h1>
+<p><%= link_to 'New Individual', new_individual_path %></p>
+<% @individuals.each do |individual| %>
+  <h2><%= individual.first_name %></h2>
+  <%= link_to 'Show Individual', individual_path(individual) %>
+<% end %>

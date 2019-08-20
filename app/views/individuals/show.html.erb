@@ -1,0 +1,15 @@
+<%= link_to 'Back', individuals_path %>
+
+<h1><%= @individual.first_name %></h1><h1>
+<%= @individual.last_name %></h1>
+<h1><%= @individual.age %></h1>
+<h1><%= @individual.hair_color %></h1>
+<h1><%= @individual.eye_color %></h1>
+<h1><%= @individual.gender %></h1>
+<h1><%= @individual.alive %></h1>
+<p><%= link_to "Edit", edit_individual_path(@individual) %></p>
+<p><%= link_to "Delete", individual_path(@individual),
+                         :data => {:confirm => "You sure?",
+                                   :method => "delete"} %></p>
+
+                                   <!DOCTYPE html>
