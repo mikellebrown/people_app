@@ -1,27 +1,50 @@
 <h1>Edit Individual</h1>
-# <%= form_for @individual do |f| %>
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %>
+<%= form_for Individual.new do |f| %>
+  <%= f.label 'first_name' %><br>
+  <%= f.text_field :first_name %><br>
 
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
+  <%= f.label 'last_name' %><br>
+  <%= f.text_area :last_name %><br>
 
-  <%= f.label :age %>
-  <%= f.text_area :age %>
+  <%= f.label 'age' %><br>
+  <%= f.text_area :age %><br>
 
-  <%= f.label :hair_color%>
-  <%= f.text_area :hair_color %>
+  <%= f.label 'hair_color' %><br>
+  <%= f.text_area :hair_color %><br>
 
-  <%= f.label :eye_color %>
-  <%= f.text_area :eye_color %>
+  <%= f.label 'eye_color' %><br>
+  <%= f.text_area :eye_color %><br>
 
-  <%= f.label :gender %>
-  <%= f.text_area :gender %>
+  <%= f.label 'gender' %><br>
+  <%= f.text_area :gender %><br>
 
-  <%= f.label :alive %>
-  <%= f.text_area :alive %>
-
-  <%= link_to 'Edit Individual', edit_individual_path([individual]) %>
-
-  <%= f.submit %>
+  <%= f.label 'alive' %><br>
+  <%= f.text_area :alive %><br>
+ 
+ 
+ 
+  <%= f.submit "Submit " %>
 <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
